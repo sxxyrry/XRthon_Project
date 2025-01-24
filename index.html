@@ -4,12 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XRthon项目</title>
+    <style>
+        body{
+            background-color: rgb(221, 176, 255);
+        }
+        or-bar{
+            display: inline-flexbox;
+            margin-top: -20px;
+            padding: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 255)
+        }
+        or-bar button{
+            background-color: rgba(0, 0, 0, 0);
+            border: 0;
+            height: 0;
+        }
+        or-bar button:hover{
+            background-color: rgb(150, 255, 204);
+        }
+        or-bar :nth-child(2){
+            background-color: rgb(92, 184, 255);
+        }
+        *{
+            color: #55f1ff;
+        }
+        .fksj{
+            margin-inline-start: 2em;
+        }
+        /* te-ct{
+            display: block;
+        } */
+        te-ct :nth-child(2){
+            margin-inline-start: 2em;
+        }
+    </style>
 </head>
 <body>
     <h1>XRthon项目</h1>
-    <div>
-        <span>介绍：</span>
-        <span>XRthon是一个基于Python的编程语言，其灵感来源为Python。</span>
-    </div>
+    <or-bar>
+        <button id="zy">主页</button>
+        <button id="XP">XRthon项目</button>
+    </or-bar>
+    <te-ct>
+        <p>介绍：</p>
+        <p>XRthon是一个基于Python的编程语言，其灵感来源为Python。</p>
+    </te-ct>
+    <te-ct>
+        <p>下载地址（github）（可能很难更新一次 (￣y▽,￣)╭ ）：</p>
+        <a href="https://github.com/sxxyrry/XRthon">地址</a>
+    </te-ct>
+    <script>
+        document.getElementById("zy").onclick = function(){
+            window.location.href = "./";
+        }
+        document.getElementById("XP").onclick = function(){
+            window.location.href = "./XRthon_Project";
+        }
+    </script>
 </body>
 </html>
