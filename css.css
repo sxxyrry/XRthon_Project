@@ -23,7 +23,7 @@ or-bar button{
     border: 0;
     height: 0;
 }
-or-bar :nth-child(1) button{
+or-bar :nth-child(2) button{
     background-color: rgb(92, 184, 255);
 }
 or-bar button:hover{
